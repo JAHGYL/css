@@ -1,0 +1,70 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>溢出属性</title>
+    <style>
+        .box1{
+            width: 200px;
+            height: 200px;
+            background-color: aquamarine;
+            overflow: hidden;
+        }
+        .box2{
+            width: 200px;
+            height: 200px;
+            background-color: aquamarine;
+            overflow: auto;
+        }
+        .box3{
+            width: 200px;
+            height: 200px;
+            background-color: aquamarine;
+
+            /* 文本溢出显示省略号，三步骤 */
+            white-space: nowrap;
+            overflow: hidden;
+            text-overflow: ellipsis;
+        }
+
+    </style>
+</head>
+<body>
+    <div class="box1">
+        Lorem ipsum dolor sit amet consectetur adipisicing elit. Dolor, libero. Repudiandae debitis exercitationem cumque rem necessitatibus facere eius ipsam ab inventore vitae. In, commodi asperiores! Eius, corporis? Impedit, quis veritatis?
+    </div><br>
+    <div class="box2">Lorem ipsum dolor sit amet consectetur adipisicing elit. Minima sit, reprehenderit voluptatum ab saepe, optio voluptatibus aspernatur adipisci sint a in labore? Dolore, sint! Non nihil natus eaque perspiciatis vitae.
+    </div><br>
+    <div class="box3">Lorem ipsum dolor sit amet, consectetur adipisicing elit. Voluptas, neque cumque. Quibusdam laboriosam laborum quisquam soluta molestiae autem quae, a, nostrum officiis asperiores delectus ipsum vel deleniti veniam nesciunt libero.
+    </div><br>
+
+    <pre>
+        <!-- 保留文本等 -->
+        .box3{
+            width: 200px;
+            height: 200px;
+            background-color: aquamarine;
+            white-space: nowrap;
+        }
+    </pre>
+</body>
+</html>
+<!-- 
+    overflow:visible      //显示溢出，默认值
+             hidden       //溢出隐藏，文本裁切（！）
+             scroll       //显示滚动条
+             auto         //显示滚动条，若内容不足则不显示滚动条（！）
+             inherit      // 继承父元素的效果
+    overflow-x:auto/hidden   //
+    overflow-y:auto/hidden   //
+
+    white-space:            //该属性用来设置如何处理元素内的空白
+                normal      //默认值，空白被忽略 
+                nowrap      //文本不会换行，文本会在同一行上继续，直到遇到<br/>标签为止
+                pre         //显示空格， 回车，不换行
+                pre-wrap    //显示回车， 空格，换行
+                pre-line    //显示回车，不显示空格、换行
+                inherit
+ -->

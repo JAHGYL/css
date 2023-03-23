@@ -1,0 +1,70 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>浮动元素之父元素高度自适应(伪元素)</title>
+
+    <style>
+        /* 
+        .box{
+            height: 100px;
+        } 
+        */
+        /*1、 如果浮动过多，换行，就出现问题 */
+
+        /* 
+        .box{
+            overflow: hidden;
+        } 
+        */
+        /* 3、一旦内容多了，就会出现溢出隐藏问题 */
+        .left,.right{
+            width: 100px;
+            height: 100px;
+            float: left;
+        }
+        .left{
+            background-color: aquamarine;
+        }
+        .right{
+            background-color: coral;
+        }
+        .content{
+            width: 200px;
+            height: 200px;
+            background-color: cornflowerblue;
+        }
+
+        .content1::first-letter{
+            font-size: 30px;
+            color: brown;
+        }
+        .content1::first-line{
+            background-color: cadetblue;
+        }
+        /* 伪元素 */
+        .content1::before{
+            content: "5555";
+        }
+        .content1::after{
+            content: "9999";
+        }
+    </style>
+</head>
+<body>
+    <div class="box">
+        <div class="left"></div>
+        <div class="right"></div>
+        <!-- <div style="clear: both;"></div> -->
+        <!-- 2、增加空标签，不利于可读性 -->
+    </div>
+    <div class="content"></div>
+    <div class="content1">Lorem ipsum dolor sit amet consectetur adipisicing elit. Repellat voluptatem quis soluta provident illo explicabo. Cumque nobis iure sed! Praesentium est, asperiores architecto aspernatur necessitatibus totam natus doloremque reiciendis optio.</div>
+</body>
+</html>
+
+<!-- 
+    ：after
+ -->

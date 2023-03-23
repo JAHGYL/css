@@ -1,0 +1,68 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>盒子模型案例</title>
+    <style>
+        *{
+            margin: 0;
+            padding: 0;
+        }
+        #box{
+            width: 500px;
+            height:500px;
+            background-position: center center;
+            /* margin: 100px 500px; */
+            margin: 0 auto;
+            background-color: burlywood;
+        }
+        .box1{
+            width: 500px;
+            height: 250px;
+        }
+        .img1,.img2{
+            margin-left: 10px;
+            margin-right: 10px ;
+            background-repeat: no-repeat;
+            background-size: contain;
+            display: block;
+        }
+        .box2,.box3{
+            width: 250px;
+            height: 200px;
+            float: left;
+        }
+        .span1{
+            margin-left: 5px;
+            background-color: aqua;
+            text-align: justify;
+        }
+        .span2,.span3{
+            width: 220px;
+            margin-left: 5px;
+            background-color: aqua;
+            text-align: justify;
+            margin-left: 5px;
+        }
+    </style>
+</head>
+<body>
+    <div id="box">
+        <h3>|女人图片</h3>
+        <div class="box1">
+            <img class="img1" src="catdog1.jpg" alt="图片加载失败"  width="480px" height="200px">
+            <p class="span1">大姐利用“异性联盟”经营美容院，救了自己</p>
+        </div>
+        <div class="box2">
+            <img class="img2" src="changjl.jpg" alt="图片加载失败" width="230px" height="150px">
+            <p class="span2">无效化妆，无效穿搭≠容貌焦虑</p>
+        </div>
+        <div class="box3">
+            <img class="img2" src="banma.jpg" alt="图片加载失败"  width="230px" height="150px">
+            <p class="span3">小个子不要拍！“高人一等”的穿搭给你</p>
+        </div>
+    </div>
+</body>
+</html>

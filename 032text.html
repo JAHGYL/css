@@ -1,0 +1,89 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>盒子模型-外边距</title>
+
+    <style>
+        *{
+            margin: 0;
+            padding: 0;
+        }
+        div{
+            width: 100px;
+            height: 100px;
+        }
+        .box1{
+            background-color:aqua;
+            border: 5px solid cornflowerblue;
+            /* margin:  50px; */
+            /* margin: 20px 50px; */
+            /* margin: 20px 50px 60px; */
+            margin: 10px 30px 40px 50px;
+        }
+        .box2{
+            background-color:chartreuse;
+            border: 5px solid cornflowerblue;
+        }
+        .box3{
+            background-color:chartreuse;
+            border: 5px solid cornflowerblue;
+            margin: 0 auto;
+        }
+/* 111111111111111111111111111111111111111111111111111111 */
+        .box4,.box5{
+            width: 200px;
+            height: 200px;
+        }
+        .box4{
+            background-color: coral;
+            margin-bottom: 100px;
+        }
+        /* 兄弟关系，垂直方向，外边距取两者间的最大值 */
+        .box5{
+            margin-top: 50px;
+            background-color: yellow;
+            margin-bottom: 20px;
+        }
+/* 111111111111111111111111111111111111111111111111111111111 */
+        .box6,.box7{
+            width: 200px;
+            height: 200px;
+        }
+        .box6{
+            float: left;
+            background-color: coral;
+            margin-right: 100px;
+        }
+        /* 兄弟关系，水平方向，外边距取两者间的和值 */
+        .box7{
+            float: left;
+            margin-left: 50px;
+            background-color: yellow;
+        }
+
+
+    </style>
+</head>
+<body>
+    <div class="box1"></div>
+    <div class="box2"></div>    
+    <div class="box3"></div>    
+
+    <div class="box4"></div>
+    <div class="box5"></div>
+
+    <div class="box6"></div>
+    <div class="box7"></div><br>
+
+    
+</body>
+</html>
+
+<!-- 
+    外边距支持负值；
+
+    屏幕居中  margin:0 auto; 横向居中
+ -->

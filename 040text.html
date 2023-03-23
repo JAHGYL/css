@@ -1,0 +1,110 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>定位</title>
+    <style>
+        *{
+            margin: 0;
+            padding: 0;
+        }
+        body{
+            height: 2000px;
+        }
+        div{
+            width: 200px;
+            height: 200px;
+        }
+        
+/* ```````````````````````````````````````````````````````````````` */
+        .box1{
+            background-color: aquamarine;
+        }
+        .box2{
+            background-color: palevioletred;
+            position: relative;
+            /* 相对于自己的初始位置 */
+            top: 100px;
+            left: 100px;
+
+        }
+/* ······························································ */
+        .box3{
+            background-color: yellowgreen;
+            position: absolute;
+            /* 绝对定位 */
+            top: 80px;
+            right: 100px;
+        }
+/* ····························································· */
+        .box4{
+            width: 500px;
+            height: 500px;
+            background-color: brown;
+            margin: 0 auto;
+            position: relative;
+            /* 须得给父盒子定位，子盒子才相对父盒子移动位置 */
+
+        }
+        .child{
+            width: 200px;
+            height: 200px;
+            background-color: chocolate;
+            position: absolute;
+            /* 子盒子相对父盒子移动位置 */
+            right: 200px;
+            top: 200px;
+        }
+/* ···························································· */
+        .box5{
+            width: 50px;
+            height: 50px;
+            background-color: darkgreen;
+            position: fixed;
+            /* 相对于窗口固定 */
+            right: 0;
+            bottom: 50px;
+        }
+
+/* ···························································· */
+        .header{
+            background-color: deepskyblue;
+            width: 600px;
+            height: 100px;
+            margin: 0 auto ;
+            position: sticky;
+            top: 0px;
+        }
+
+    </style>
+</head>
+<body>
+    <div class="box"></div>
+    <div class="header"></div>
+
+    <div class="box1"></div>
+    <div class="box2"></div>
+
+    <div class="box3"></div>
+
+    <div class="box4">
+        <div class="child"></div>
+    </div>
+
+    <div class="box5"></div>
+
+
+
+
+</body>
+</html>
+
+<!-- 
+    position:static；      默认值
+             absolute;     绝对定位
+             relative；    相对定位
+             fixed；       固定定位
+             sticky；      粘性定位
+ -->

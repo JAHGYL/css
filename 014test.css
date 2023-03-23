@@ -1,0 +1,13 @@
+table{
+    border:0cap;
+    width: 100px;
+    height: 100px;
+    align-content:center;
+    background-color: cornflowerblue;
+    border-color: darkcyan;
+}
+tr{
+    border:0cap;
+    align-self: center;
+    vertical-align: middle;
+}

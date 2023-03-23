@@ -1,0 +1,58 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>css文本属性</title>
+    <style>
+        .bx1{
+            font-size: 30px;
+            /* 默认微软雅黑 */
+            font-family: 宋体;
+            color: coral;
+            /* text-align: justify; 两端对齐，针对多行文本 */
+            text-align: center;
+        }
+        .bj{
+            /* line-height:100px 行高，居中分段*/
+            width: 400px;
+            height: 300px;
+            text-align: center;
+            background-color: brown;
+            line-height: 100px;
+        }
+        .by{
+            font-weight: bolder;
+            /* 100细lighter 400正常norml 700加粗bolder */
+        }
+        .bs{
+            font-style: italic;
+            /* italic倾斜  oblique更倾斜*/
+        }
+        
+    </style>
+</head>
+<body>
+     <div class="bx1">
+        <p class="by">昨夜雨疏风骤，浓睡不消残酒。</p>
+        <p class="bs">试问卷帘人，却道海棠依旧。</p>
+        知否，知否？应是绿肥红瘦。1<br> 
+    </div>
+    <div class="bj">
+        昨夜雨疏风骤，浓睡不消残酒。<br>
+        试问卷帘人，却道海棠依旧。<br>
+        知否，知否？应是绿肥红瘦。2<br>    
+    </div>
+</body>
+</html>
+
+<!-- 
+    font-size 字体大小，浏览器默认是16px;
+    font-family 字体形状
+    color
+    font-weight 字体加粗
+    font-style  倾斜
+    text-align  文本水平对齐
+    line-height:100px 行高
+-->

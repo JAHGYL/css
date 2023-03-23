@@ -1,0 +1,60 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>css样式表</title>
+    <link rel="stylesheet" href="014test.css" type="text/css">
+    <style>
+        /* 行内>内部优先级>外部  (!import加在谁那谁优先级高——同一属性)*/
+        h1{
+            color: blueviolet;
+        }
+        h2{
+            color: chartreuse;
+        }
+        h3{
+            color: aqua;
+        }
+    </style>
+</head>
+<body>
+    <h1>mkfkadsjf;ajkaj;ajeejalk</h1>
+
+    <h2>wfeuafuhfjalhewja;</h2>
+    <h3>jasewaiohjashuiwahufha</h3>
+
+    <table>
+        <tr>
+            <td>uuuuu</td>
+            <td>xxxx</td>
+            <td>yyyyy</td>
+        </tr>
+        <tr>
+            <td>aaaaa</td>
+            <td>wwwww</td>
+            <td>ffdff</td>
+        </tr>
+    </table>
+
+    <h4 style="color: rgb(135, 222, 183); right: 10;">李弘斌</h4>
+</body>
+</html>
+
+<!-- 
+    <style>
+        h1{
+            color: cadetblue;   
+    }
+    </style>    //内部样式表放到head里 
+-->
+
+<!--//外部样式表 
+    <link rel="stylesheet" type="text/css" href="连接"> 
+-->
+
+<!-- 
+    行内样式样式
+    <h1 style="color: aqua; border: 0ch;">kfjsajshfa</h1> 
+-->

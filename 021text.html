@@ -1,0 +1,36 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>css表格</title>
+    <style>
+        ul{
+            list-style-type: circle;
+        }
+        .l1{
+            list-style-image: url(tree.png);
+            /* 图标设置 */
+        }
+        li{
+            border: 1px solid red;
+            /* solid 实线 */
+            list-style-position: inside;
+            /* 设置图标在表格里面 */
+        }
+        /* 合并模式.位置可以相互转换
+            .box{
+                list-style: circle url(tree.png) inside ;
+            }
+        */
+    </style>
+</head>
+<body>
+    <ul>
+        <li class="l1">fauihfwufa</li>
+        <li class="l2">ewfahuhuwa</li>
+        <li class="l3">wfahuihuif</li>
+    </ul>
+</body>
+</html>

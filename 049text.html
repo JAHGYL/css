@@ -1,0 +1,72 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>高度自适应</title>
+    <style>
+        *{
+            margin: 0;
+            padding: 0;
+        }
+        .box{
+            /* width: 100px; */
+            /* 不写 或者 auto 就是宽度自适应  */
+            height: 100px;
+            padding-left: 100px;
+            background-color: aqua;
+        }
+        /* 导航栏/通栏布局 常用 : auto  */
+
+        .header{
+            width: 100%;
+            height: 50px;
+            background-color: yellow;
+        }
+        .body{
+            min-height: 500px;
+            /* 高度自适应 */
+
+            background-color: red;
+            /* 
+                min-height
+                max-height
+                min-width
+                max-width            
+            */
+        }
+        .footer{
+            width: 100%;
+            height: 50px;
+            background-color: yellow;
+        }
+        li{
+            height: 100px;
+            max-width: 700px;
+            margin: 0 auto;
+            background-color: green;
+        }
+    </style>
+</head>
+<body>
+    <div class="box"></div>
+
+    <div class="header"></div>
+    <div class="body">
+        <ul>
+            <li>wuashfu</li>
+            <li>hstrrsh</li>
+            <li>haerhfazs</li>
+            <li>jrsdxsty</li>
+            <li>sthtset35wa</li>
+            <li>rghe6te</li>
+            <li>aw4g5yeag</li>
+            <li>arga35wga</li>
+            <li>3gweajse</li>
+            <li>3gweajse</li>
+        </ul>
+    </div>
+    <div class="footer"></div>
+</body>
+</html>

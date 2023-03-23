@@ -1,0 +1,68 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>下拉菜单and文本域and字段集</title>
+    <style>
+        textarea{
+            width: 300px;
+            height: 300px;
+            resize: horizontal;
+            /*resize: horizontal; 水平方向可以随意伸缩，竖直方向 */
+            /*resize: vertical;   竖直方向 */
+        }
+        legend{
+            border: 1px solid red;
+            text-align: right;
+            padding: 20px;
+        }
+    </style>
+</head>
+<body>
+    <div>
+        <div>您的收货地址：</div>
+        <!-- select 和 option 并用组成下拉菜单 -->
+        <select>
+            <option value="">辽宁</option>
+            <option value="">广东</option>
+            <option value="" selected>浙江</option>
+            <option value="">湖南</option>
+            <option value="">湖北</option>
+        </select>
+    </div>
+    <br>
+
+    <!-- size 属性,显示几个 -->
+    <select size="3" multiple>
+        <!-- multiple 多选 -->
+        <option value="">奶茶</option>
+        <option value="">珍珠</option>
+        <option value="">豆花</option>
+        <option value="">咖啡</option>
+        <option value="">牛奶</option>
+    </select>
+    <br>
+    <div>
+        <!-- 多文本输入框 placeholder -->
+        <textarea name="" id="" cols="30" rows="5" placeholder="请输入你的意见">提前设置好的value</textarea>
+    </div>
+
+    <fieldset>
+        <legend>性别</legend>
+        <input type="radio" name="sex" id="">男<br>
+        <input type="radio" name="sex" id="">女
+    </fieldset>
+</body>
+</html>
+
+<!-- 
+    / select 支持的属性 /
+        1、size ,显示几个
+        2、multiple ,多选几个
+
+    / option 支持的属性 /
+        1、value ,提供给后端需要用的value值
+        2、selected ,默认选中
+ -->

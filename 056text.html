@@ -1,0 +1,38 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>表单进阶-单选框</title>
+</head>
+<body>
+    <div>你对本节课的满意度如何</div>
+    <div>
+        <input type="radio" name="only" checked="checked">非常满意
+        <!-- checked 默认选中 -->
+    </div>
+    <div>
+        <input type="radio" name="only">满意
+    </div>
+    <div>
+        <input type="radio" name="only">一般
+    </div>
+    <div>
+        <input type="radio" name="only">不满意
+    </div>
+    <!-- 设置一样的name只能单选 -->
+
+    <h3>性别</h3>
+    <div>
+        <input type="radio" name="sex" id="boy">
+        
+        <label for="boy">男</label>
+        <!-- 点击文字也可以选中 -->
+    </div>
+    <div>
+        <input type="radio" name="sex" id="girl">
+        <label for="girl">女</label>
+    </div>
+</body>
+</html>

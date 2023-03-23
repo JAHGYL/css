@@ -1,0 +1,91 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>盒子模型</title>
+    <style>
+        .box1{
+            width: 600px;
+            height: 200px;
+            background-color: aqua;
+            /* padding: 30px; */
+            padding: 100px 20px 30px;
+        }
+        p{
+            text-align: justify;
+            font-size: 20px;
+            font-family: 宋体;
+            text-indent: 2em;
+        }
+
+        .ul2{
+            padding-left: 0;
+            /* 消除左间距 */
+        }
+
+        .box2{
+            width: 50px;
+            height: 50px;
+            background-color: blueviolet;
+            border: 5px dotted cornflowerblue;
+            /* 样式 style：solid double dashed dotted */
+        }
+        .box3{
+            width: 50px;
+            height: 50px;
+            background-color: blueviolet;
+            border-top: 5px dotted cornflowerblue;
+            /* 
+                border-top/left/bottom/right
+            */
+        }
+        .box4{
+            width: 100px;
+            height: 100px;
+            background-color: yellow;
+            border-width: 10px 20px 30px 40px;
+            border-color: aqua red rebeccapurple palegreen;
+            border-style: solid dotted double dashed;
+            /* border-width ,border-style , border-color  都可以实现四个方向的不同的值 */
+        }
+
+    </style>
+</head>
+<body>
+    <div class="box1">
+        <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Dicta amet quos veritatis reiciendis? Reiciendis nam alias omnis commodi dolore incidunt nihil quis ipsum repudiandae animi officiis, quos neque, reprehenderit natus.</p>
+    </div>
+    <br>
+
+    <ul class="ul1">
+        <li>suadhguvjbnsj</li>
+        <li>vzshfuisvnvzsjkl</li>
+        <li>vSDIHUfznvksDZh</li>
+    </ul>
+
+    <ul class="ul2">
+        <li>suadhguvjbnsj</li>
+        <li>vzshfuisvnvzsjkl</li>
+        <li>vSDIHUfznvksDZh</li>
+    </ul>
+
+    <div class="box2"></div><br>
+    <div class="box3"></div><br>
+    <div class="box4"></div>
+
+</body>
+</html>
+
+<!-- 
+    padding  1.一个
+             2.两个 上下 左右
+             3.三个 上 左右 下
+             4.四个 上 右 下 左
+
+    padding-left
+    padding-right
+    padding-bottom
+    padding-top   //设置单一属性
+ -->

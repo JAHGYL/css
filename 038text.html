@@ -1,0 +1,92 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>二级菜单</title>
+    <style>
+        *{
+            margin: 0;
+            padding: 0;
+        }
+        .all{
+            display: block;
+            width: 600px;   
+            margin: 0 auto;
+            /* overflow: hidden; */
+        }
+        ul{
+            list-style: none;
+        }
+        .all .first{
+            float: left;
+            width: 250px;
+            text-align: center;
+            border: 1px solid plum;
+            font-size: 20px;
+            display: inline;
+            color: white;
+            line-height: 40px;
+            background-color: palevioletred;
+
+            position: relative;
+        }
+        .first:hover{
+            background-color: pink;
+        }
+        .first ul{
+            display: none;
+            background-color: white;
+            color: black;
+            position: absolute;
+            left: 0;
+            top: 40px;
+            width: 250px;
+        }
+        .first:hover ul{
+            display: block;
+        }
+        .first .third:hover {
+            color: palevioletred;
+        }
+        .box{
+            height: 200px;
+            background-color: cornflowerblue;
+        }
+
+/* ````````````````````````````````````````````````````````````` */
+        .all::after{
+            content: "kudftd";
+            clear: both;
+            display: block;
+            width: 0;
+            height: 0;
+            visibility: hidden;
+        }
+    </style>
+</head>
+<body>
+    <ul class="all">
+        <li class="first">
+            互动动作
+            <ul class="second">
+                <li class="third">牵手&emsp;φ(゜▽゜*)♪</li>
+                <li class="third">
+                    <a href="001test.html">亲亲&emsp;(づ￣ 3￣)づ</a>
+                </li>
+                <li class="third">抱抱&emsp;\(￣︶￣*\)</li>
+                <li class="third">举高高&emsp;o(*￣▽￣*)ブ</li>
+            </ul>
+        </li>
+        <li class="first">
+            约会选项
+            <ul class="second">
+                <li class="third">看电影&#128518</li>
+                <li class="third">吃饭&#128515</li>
+            </ul>
+        </li>
+    </ul>
+    <div class="box">111111111</div>
+</body>
+</html>
